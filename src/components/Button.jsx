@@ -1,9 +1,11 @@
 function Button(props){
     return(
         <button 
-        className="border border-slate-300 outline-slate-400 px-4 py-2 rounded-md" 
+        className="bg-slate-500 text-white p-2 rounded-md hover:bg-slate-700 " 
         {...props}
-        />
+        >
+            {props.children}
+        </button>
     )
 }
 
